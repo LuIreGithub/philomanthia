@@ -31,16 +31,14 @@ Imaginez une consigne : « Avance de 3 mètres vers la droite et de 2 mètres ve
 Une matrice est un tableau rectangulaire d'éléments, souvent des nombres, disposés en lignes et en colonnes. Une matrice $A=(a_{ij})$ de taille $m\times n$ comporte $m$ lignes et $n$ colonnes ; $a_{ij}$ désigne l'élément de la ligne $i$ et de la colonne $j$.
 
 **Exemple**
-$$
-A =
-\left(
+```math
+A = \left(
 \begin{array}{ccc}
 1 & 2 & 3 \\
 4 & 5 & 6
 \end{array}
 \right)
-$$
-
+```
 Cette matrice a deux lignes et trois colonnes. Son élément $a_{23}$ vaut $6$.
 
 **Vulgarisation**
