@@ -31,9 +31,14 @@ Imaginez une consigne : « Avance de 3 mètres vers la droite et de 2 mètres ve
 Une matrice est un tableau rectangulaire d'éléments, souvent des nombres, disposés en lignes et en colonnes. Une matrice $A=(a_{ij})$ de taille $m\times n$ comporte $m$ lignes et $n$ colonnes ; $a_{ij}$ désigne l'élément de la ligne $i$ et de la colonne $j$.
 
 **Exemple**
-
 $$
-A=\begin{pmatrix}1&2&3\\4&5&6\end{pmatrix}.
+A =
+\left(
+\begin{array}{ccc}
+1 & 2 & 3 \\
+4 & 5 & 6
+\end{array}
+\right)
 $$
 
 Cette matrice a deux lignes et trois colonnes. Son élément $a_{23}$ vaut $6$.
@@ -105,13 +110,13 @@ $$
 La **variance** mesure la dispersion quadratique autour de l'espérance :
 
 $$
-\operatorname{Var}(X)=E[(X-\mu)^2]=E[X^2]-E[X]^2.
+\mathrm{Var}(X)=E[(X-\mu)^2]=E[X^2]-E[X]^2.
 $$
 
 L'**écart-type** est la racine carrée de la variance et s'exprime dans la même unité que $X$ :
 
 $$
-\sigma=\sqrt{\operatorname{Var}(X)}.
+\sigma=\sqrt{\mathrm{Var}(X)}.
 $$
 
 **Exemple**
@@ -123,7 +128,7 @@ E[X]=\frac{1+2+3+4+5+6}{6}=3{,}5,
 $$
 
 $$
-\operatorname{Var}(X)=\frac{1^2+2^2+3^2+4^2+5^2+6^2}{6}-(3{,}5)^2=\frac{35}{12}\approx2{,}92,
+\mathrm{Var}(X)=\frac{1^2+2^2+3^2+4^2+5^2+6^2}{6}-(3{,}5)^2=\frac{35}{12}\approx2{,}92,
 $$
 
 $$
@@ -141,7 +146,7 @@ Deux groupes d'élèves peuvent avoir la même moyenne de 10/20, mais des notes 
 La corrélation linéaire mesure la direction et l'intensité de la relation **linéaire** entre deux variables quantitatives. Pour deux variables aléatoires de variances finies et non nulles, le coefficient de Pearson est :
 
 $$
-\rho_{X,Y}=\frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y},\qquad -1\leq\rho_{X,Y}\leq1.
+\rho_{X,Y}=\frac{\mathrm{Cov}(X,Y)}{\sigma_X\sigma_Y},\qquad -1\leq\rho_{X,Y}\leq1.
 $$
 
 Une valeur proche de $1$ indique une relation linéaire positive forte ; proche de $-1$, une relation négative forte ; proche de $0$, une faible corrélation linéaire.
